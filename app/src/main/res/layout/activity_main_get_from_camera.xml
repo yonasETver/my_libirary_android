@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainActivityCamera"
+    tools:context=".MainActivityGetFromCamera">
+
+    <FrameLayout
+        android:id="@+id/fragmentMain"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/conLay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/takeImage"
+            android:layout_width="150dp"
+            android:layout_height="94dp"
+            android:layout_marginTop="60dp"
+            android:background="#d9d9d9"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/strok_shape"
+            android:gravity="center"
+            android:text="Enter Book Ditail"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/takeImage"
+            app:layout_constraintStart_toStartOf="@+id/takeImage"
+            app:layout_constraintTop_toBottomOf="@+id/takeImage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/imageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:backgroundTint="@color/btn_light_green"
+            app:cornerRadius="15dp"
+            app:icon="@drawable/ic_photo_camera"
+            app:iconSize="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.729"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/takeImage"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Title"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+        <EditText
+            android:id="@+id/editTitleBook"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Enter Book Title"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/textBookTitle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textBookTitle"
+            app:layout_constraintTop_toBottomOf="@+id/textBookTitle" />
+
+        <TextView
+            android:id="@+id/textAuthorBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Author"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/editTitleBook"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTitleBook"
+            app:layout_constraintTop_toBottomOf="@+id/editTitleBook" />
+
+        <EditText
+            android:id="@+id/editAuthorBook"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:hint="Enter Book Author"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editTitleBook"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTitleBook"
+            app:layout_constraintTop_toBottomOf="@+id/textAuthorBook" />
+
+        <TextView
+            android:id="@+id/textDescrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:text="Description"
+            app:layout_constraintEnd_toEndOf="@+id/textAuthorBook"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textAuthorBook"
+            app:layout_constraintTop_toBottomOf="@+id/editAuthorBook" />
+
+        <EditText
+            android:id="@+id/editDeskrBook"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Enter Book Description"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editAuthorBook"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editAuthorBook"
+            app:layout_constraintTop_toBottomOf="@+id/textDescrip" />
+
+        <TextView
+            android:id="@+id/txtPublisherBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:text="Publisher"
+            app:layout_constraintEnd_toEndOf="@+id/textDescrip"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textDescrip"
+            app:layout_constraintTop_toBottomOf="@+id/editDeskrBook" />
+
+        <EditText
+            android:id="@+id/editTextPublisher"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Enter publisher"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editDeskrBook"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editDeskrBook"
+            app:layout_constraintTop_toBottomOf="@+id/txtPublisherBook" />
+
+        <TextView
+            android:id="@+id/textPublishedYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:text="Published Year"
+            app:layout_constraintEnd_toEndOf="@+id/txtPublisherBook"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextPublisher"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPublisher" />
+
+        <EditText
+            android:id="@+id/editPublishedYear"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Enter Published Year"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/editTextPublisher"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextPublisher"
+            app:layout_constraintTop_toBottomOf="@+id/textPublishedYear" />
+
+        <TextView
+            android:id="@+id/pageNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:text="Total Page Number"
+            app:layout_constraintEnd_toEndOf="@+id/textPublishedYear"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textPublishedYear"
+            app:layout_constraintTop_toBottomOf="@+id/editPublishedYear" />
+
+        <EditText
+            android:id="@+id/editTotalPage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Enter Total Page Number"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/editPublishedYear"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editPublishedYear"
+            app:layout_constraintTop_toBottomOf="@+id/pageNumber" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/btn_light_green"
+            android:gravity="center"
+            app:cornerRadius="15dp"
+            android:text="SUBMIT"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/editTotalPage"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/editTotalPage"
+            app:layout_constraintTop_toBottomOf="@+id/editTotalPage" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

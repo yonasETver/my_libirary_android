@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/fontSize"
+        android:title="Font Size">
+         <menu>
+             <item
+                 android:id="@+id/font12"
+                 android:title="12"
+                 />
+
+             <item
+                 android:id="@+id/font13"
+                 android:title="13"
+                 />
+
+             <item
+                 android:id="@+id/font14"
+                 android:title="14"
+                 />
+
+             <item
+                 android:id="@+id/font15"
+                 android:title="15"
+                 />
+
+             <item
+                 android:id="@+id/font16"
+                 android:title="16"
+                 />
+
+         </menu>
+    </item>
+
+    <item
+        android:id="@+id/fontFamily"
+        android:title="Font Family">
+
+        <menu xmlns:android="http://schemas.android.com/apk/res/android">
+                <item android:id="@+id/cheack1"
+                    android:title="Agbalumo"
+                    android:icon="@color/bar_orange"
+                    />
+                <item android:id="@+id/cheack2"
+                    android:title="Montserrat" />
+                <item android:id="@+id/cheack3"
+                    android:title="Oswald" />
+                <item android:id="@+id/cheack4"
+                    android:title="Lora" />
+                <item android:id="@+id/cheack5"
+                    android:title="Edu TAS Beginner"/>
+                    </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/nightMode"
+        android:title="Night Mode">
+        <menu>
+            <item
+                android:id="@+id/nightModeSwitch"
+                android:title="Off"
+                app:showAsAction="always"
+                android:actionLayout="@layout/use_switch"
+                />
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/barColor"
+        android:title="App Bar Color">
+
+        <menu>
+            <item
+                android:id="@+id/colorGreen"
+                android:title="Light Green"
+                />
+            <item
+                android:id="@+id/colorPurple"
+                android:title="Purple"
+                />
+
+            <item
+                android:id="@+id/colorOrange"
+                android:title="Orange"
+                />
+
+            <item
+                android:id="@+id/colorRed"
+                android:title="Red"
+                />
+
+            <item
+                android:id="@+id/colorLightBlue"
+                android:title="Light Blue"
+                />
+
+        </menu>
+
+    </item>
+</menu>

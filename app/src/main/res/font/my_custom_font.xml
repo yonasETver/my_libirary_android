@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font android:font="@font/agbalumo" />
+    <font android:font="@font/edu_tas_beginner" />
+    <font android:font="@font/lora" />
+    <font android:font="@font/oswald" />
+    <font android:font="@font/montserrat" />
+</font-family>

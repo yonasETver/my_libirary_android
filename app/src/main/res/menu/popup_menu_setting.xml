@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+    <item
+        android:id="@+id/bookSite"
+        android:title="Book Site"
+        >
+        <menu>
+            <item
+                android:id="@+id/site1"
+                android:title="PDF Drive"
+                />
+
+            <item
+                android:id="@+id/site2"
+                android:title="ManyBooks"
+                />
+
+            <item
+                android:id="@+id/site3"
+                android:title="Project Gutenberg"
+                />
+            <item
+                android:id="@+id/site4"
+                android:title="Open Library"
+                />
+        </menu>
+
+    </item>
+    </group>
+</menu>

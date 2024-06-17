@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    tools:context=".MainActivityAllBook">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray_card"
+        >
+
+        <ImageView
+            android:id="@+id/bookPhoto"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            />
+       <Button
+           android:layout_width="120dp"
+           android:layout_height="35dp"
+           android:id="@+id/btnDitail"
+           android:layout_below="@+id/bookPhoto"
+           android:text="SPECIFY"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:backgroundTint="@color/btn_light_green"
+           android:textColor="@color/black"
+           android:layout_centerHorizontal="true"
+           android:textSize="12sp"
+           />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

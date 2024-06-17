@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bookdetail"
+    tools:context=".MainActivityDetailsAboutAllBooks">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/fragmentMain"
+        tools:ignore="MissingConstraints"
+        android:paddingBottom="10dp"
+        />
+
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/fragmentMain"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/ic_back_black"
+        android:id="@+id/back"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BOOK DETAILS"
+        android:layout_below="@+id/fragmentMain"
+        android:paddingBottom="20dp"
+        android:textColor="@color/black"
+        android:background="#ffffff"
+        android:layout_toRightOf="@+id/back"
+        android:id="@+id/txtTitleDetail"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:layout_marginRight="45dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageViewDitail"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/txtTitleDetail"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/imageViewDitail"
+        android:layout_below="@+id/txtTitleDetail"
+        android:paddingRight="20dp"
+        android:paddingLeft="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:background="@color/btn_light_green"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title:_____________ "
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/txtDescrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description: ___________ "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Author: ___________ "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPublisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Publisher: _________ "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPubYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Published year: ____ "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPageNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total page: ________ "
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/linearLayout"
+            android:background="@drawable/button_shape"
+            android:layout_centerHorizontal="true"
+            android:layout_height="56dp"
+            android:id="@+id/layoutForButton"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:backgroundTint="@color/btn_light_green"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startReading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/floatingActionButtonSelect"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/btn_light_green"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="START READING"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            app:cornerRadius="30dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/makewishlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startReading"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/btn_light_green"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="MAKE WISH LIST"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            app:cornerRadius="30dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

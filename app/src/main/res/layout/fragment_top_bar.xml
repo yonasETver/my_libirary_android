@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:background="#ff0000"
+    android:id="@+id/topBar">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/ic_menu_book"
+        android:layout_alignParentStart="true"
+        android:id="@+id/menu_icon"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/ic_notification_book"
+        android:id="@+id/alarm_icon"
+        android:layout_toEndOf="@+id/menu_icon"
+        android:paddingLeft="0dp"
+        android:layout_marginLeft="0dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alermTxt"
+        android:text="9+"
+        android:layout_toRightOf="@+id/alarm_icon"
+        android:gravity="center"
+        android:background="@drawable/notify_shape"
+        >
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/alarm_icon"
+        android:layout_toLeftOf="@+id/setting_icon"
+        android:id="@+id/rellogo"
+        >
+
+        <TextView
+
+            android:id="@+id/titleLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="My Book Library"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/ic_setting_book"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/setting_icon"
+        />
+
+</RelativeLayout>
